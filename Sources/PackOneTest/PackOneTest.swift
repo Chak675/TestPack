@@ -1,4 +1,4 @@
-import SwiftUI
+import UIKit
 public struct PackOneTest {
     public private(set) var text = "Hello, World!"
 
@@ -8,11 +8,17 @@ public struct PackOneTest {
 
 @available(macOS 10.15, *)
 
-struct SwiftUIView: View {
-    typealias Body = <#type#>
+struct LabelText {
+   
+    var text = UILabel().self
     
-    @available(iOS 13.0, *)
-    var boby: some View {
-        Text("Text Packet")
+    func setupSubviews() {
+    text.translatesAutoresizingMaskIntoConstraints = false
+    text.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+    text.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor).isActive = true
+        
+        text.textColor = .black
+        text.text = "Text PACK!"
     }
+    
 }
