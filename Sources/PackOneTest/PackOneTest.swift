@@ -8,7 +8,7 @@ public struct PackOneTest {
 
 @available(macOS 10.15, *)
 
-struct LabelText {
+struct CustomLabelText {
     func backColor() {
         view.backgroundColor = .gray
     }
