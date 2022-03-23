@@ -9,13 +9,14 @@ public struct PackOneTest {
 @available(macOS 10.15, *)
 
 struct LabelText {
+    func backColor() {
+        view.backgroundColor = .gray
+    }
    
-    var text = UILabel().self
+    var text = UILabel()
     
     func setupSubviews() {
-    text.translatesAutoresizingMaskIntoConstraints = false
-    text.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-    text.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor).isActive = true
+  
         
         text.textColor = .black
         text.text = "Text PACK!"
