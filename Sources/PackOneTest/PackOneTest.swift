@@ -8,16 +8,15 @@ public struct PackOneTest {
 
 @available(macOS 10.15, *)
 
-struct CustomLabelText {
-    func backColor() {
-        view.backgroundColor = .gray
-    }
+public struct CustomLabelText {
    
-    var text = UILabel()
+//    func backColor() {
+//        view.backgroundColor = .gray
+//    }
+   
+   public var text = UILabel()
     
-    func setupSubviews() {
-  
-        
+  public func setupSubviews() {
         text.textColor = .black
         text.text = "Text PACK!"
     }
