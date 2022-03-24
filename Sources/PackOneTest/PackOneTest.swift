@@ -19,6 +19,7 @@ public struct CustomLabelText {
   public func setupSubviews() {
         text.textColor = .black
         text.text = "Text PACK!"
+      print("Hello text!")
     }
     
 }
